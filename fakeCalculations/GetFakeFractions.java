@@ -42,18 +42,15 @@ public class GetFakeFractions{
 					break;
 				}
 			}
-			if(chars1.toString().equals(chars2.toString())){
-				return true;
-			}
-			return false;
+			return chars1.toString().equals(chars2.toString());
 		}
 	}
 	
 	//char array to list
 	public static ArrayList<Character> charArrayToList(char[] chars){
-		ArrayList<Character> list = new ArrayList<Character>();
-		for(int i = 0; i < chars.length; i++){
-			list.add(chars[i]);
+		ArrayList<Character> list = new ArrayList<>();
+		for(char c : chars){
+			list.add(c);
 		}
 		return list;
 	}

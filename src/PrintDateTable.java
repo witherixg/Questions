@@ -18,7 +18,7 @@ public class PrintDateTable{
 	}
 	
 	private static int getFirstDayOfMonth(int year, int month){
-		int firstDay = 1;
+		int firstDay;
 		int totalDays = 0;
 		for(int i = 1; i < month; i++){
 			totalDays += getDaysInMonth(year, i);
